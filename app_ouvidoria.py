@@ -32,7 +32,7 @@ st.set_page_config(page_title="Ouvidoria Inteligente", page_icon="🏛️", layo
 MODELOS_DISPONIVEIS = [
     "paraphrase-multilingual-MiniLM-L12-v2",
     "sentence-transformers/all-MiniLM-L6-v2",
-    "BAAI/bge-small-pt-v1.5",
+    "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
 ]
 
 CATEGORIAS_CORES = {
@@ -154,7 +154,7 @@ with tab_busca:
 # -----------------------------------------------------------------------------
 with tab_base:
     st.subheader("Todas as manifestações da ouvidoria")
-    st.dataframe(df, use_container_width=True, hide_index=True)
+    st.dataframe(df, width="stretch", hide_index=True)
 
     st.markdown("---")
     if st.button("📐 Gerar Matriz de Similaridade Completa"):
@@ -181,7 +181,7 @@ with tab_base:
                 pares.append((ids[i], ids[j], matriz[i, j]))
         pares.sort(key=lambda p: -p[2])
         df_pares = pd.DataFrame(pares[:15], columns=["ID 1", "ID 2", "Similaridade"])
-        st.dataframe(df_pares, use_container_width=True, hide_index=True)
+        st.dataframe(df_pares, width="stretch", hide_index=True)
 
 # -----------------------------------------------------------------------------
 # ABA 3 — ESPAÇO VETORIAL
