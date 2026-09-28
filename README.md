@@ -3,17 +3,17 @@
 Desafio Integrador — Processamento de Linguagem Natural / Engenharia de IA
 Tema: Representações Vetoriais, Busca Semântica e Chunking
 
-## ⚠️ Nota importante sobre o dataset
+## Nota sobre o dataset
 
-O enunciado do desafio faz referência a um arquivo `manifestacoes.json` a ser
-fornecido pela disciplina, contendo 40 manifestações reais anonimizadas. Esse
-arquivo **não foi disponibilizado** à equipe. Para viabilizar a entrega,
-geramos um **dataset sintético equivalente** (`manifestacoes.json` neste
-repositório), respeitando todas as restrições do enunciado — ver
-`gerar_dataset.py` para o código de geração e validação, e `RELATORIO.pdf`
-para os detalhes.
+O enunciado do desafio faz referência a um arquivo `manifestacoes.json`,
+contendo 40 manifestações reais anonimizadas, a ser usado como base do
+projeto. Não conseguimos localizar esse arquivo dentro do prazo da entrega.
+Para não travar o desenvolvimento, geramos um **dataset sintético
+equivalente** (`manifestacoes.json` neste repositório), reproduzindo todas as
+restrições descritas no enunciado — ver `gerar_dataset.py` para o código de
+geração e validação, e `RELATORIO.pdf` para os detalhes.
 
-Se o dataset oficial for disponibilizado depois, basta substituir o arquivo
+Caso o dataset oficial apareça depois, basta substituir o arquivo
 `manifestacoes.json` (mesmo formato: `id`, `data`, `categoria_oficial`,
 `texto`) e reexecutar os notebooks e o app — nenhum código precisa mudar.
 
@@ -54,7 +54,12 @@ cache local).
 
 ## Autoria
 
-Vitor Nóbrega de Souza (e colega — ver RELATORIO.pdf, seção "Equipe")
+Equipe (grupo de 3):
+- Vitor Nóbrega de Souza
+- Max Samuel Caitano Cavalcante
+- Augusto Lustosa de Alencar e Fontoura
+
+Ver `RELATORIO.pdf`, seção "Equipe", para a divisão de responsabilidades.
 
 ## Transparência
 
